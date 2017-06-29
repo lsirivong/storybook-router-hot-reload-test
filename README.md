@@ -1,6 +1,6 @@
 # storybook-router hot reloading test env
 
-Repro steps:
+Steps to reproduce:
 
 1. Run storybook 
 
@@ -9,7 +9,7 @@ Repro steps:
     ```
 
 2. Modify `styles` of `src/Button.js`
-3. Observer hot-reloading behavior of button stories
+3. Observe hot reloading behavior of button stories
 
 Screencap:
 
