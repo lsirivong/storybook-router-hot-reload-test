@@ -128,10 +128,11 @@ class HistoryWatcher extends Component {
     this.unlisten = this.props.history.listen(this.onHistoryChanged);
   }
 
-  shouldComponentUpdate(nextProps) {
-    // Prevents unnecessary re-renderings.
-    return nextProps.location.pathname !== this.props.location.pathname;
-  }
+  // Removing fixes hot reloading
+  // shouldComponentUpdate(nextProps) {
+  //   // Prevents unnecessary re-renderings.
+  //   return nextProps.location.pathname !== this.props.location.pathname;
+  // }
 
   componentWillUnmount() {
     this.unlisten();
